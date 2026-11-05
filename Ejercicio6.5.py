@@ -1,0 +1,1 @@
+#Ejercicio 6.5: Lanzamiento de excepciones

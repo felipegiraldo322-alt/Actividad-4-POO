@@ -5,7 +5,7 @@ class LeerArchivo:
 
     @staticmethod
     def main():
-        nombre_archivo = "Linea 1.txt"
+        nombre_archivo = "prueba.txt"
         
         try:
             with open(nombre_archivo, 'r', encoding='utf-8') as archivo:

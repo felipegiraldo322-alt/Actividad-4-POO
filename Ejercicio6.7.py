@@ -9,7 +9,6 @@ class Programador:
     def __str__(self):
         return f"{self.nombre} {self.apellidos}"
 
-
 class EquipoMaratónProgramación:
     """Modela un equipo de programadores que participará en una maratón."""
     def __init__(self, nombre_equipo, universidad, lenguaje_programacion):
@@ -17,7 +16,7 @@ class EquipoMaratónProgramación:
         self.universidad = universidad
         self.lenguaje_programacion = lenguaje_programacion
         self.tamaño_equipo = 0
-        self.programadores = [None] * 3  # Array con un tamaño fijo de 3 programadores
+        self.programadores = [None] * 3
 
     def esta_lleno(self):
         """Determina si el array de programadores está lleno."""

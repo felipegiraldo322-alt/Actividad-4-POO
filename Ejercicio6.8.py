@@ -5,21 +5,17 @@ class LeerArchivo:
 
     @staticmethod
     def main():
-        # Definición del archivo de texto a leer
-        nombre_archivo = "C:/prueba.txt"
+        nombre_archivo = "D:\\Downloads\\Linea 1.txt"
         
         try:
-            # En Python, 'open' combina las funciones de FileInputStream, InputStreamReader y BufferedReader
             with open(nombre_archivo, 'r', encoding='utf-8') as archivo:
                 linea = archivo.readline()
                 while linea:
-                    # Imprime en pantalla una línea del archivo. 
-                    # Se usa end='' porque readline() conserva el salto de línea original.
                     print(linea, end='')
-                    linea = archivo.readline()  # Lee la siguiente línea
+                    linea = archivo.readline()
                     
         except (IOError, FileNotFoundError):
-            # En caso de que se genere una excepción (archivo no encontrado o error de lectura)
+            # En caso de que se genere una excepción
             print("No se pudo leer el archivo.")
 
 if __name__ == "__main__":

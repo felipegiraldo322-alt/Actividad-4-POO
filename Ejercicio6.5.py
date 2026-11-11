@@ -7,13 +7,13 @@ class Vendedor:
         self.edad = 0
 
     def imprimir(self):
-        print(f"Nombre del vendedor = {self.nombre}")
+        print(f"\nNombre del vendedor = {self.nombre}")
         print(f"Apellidos del vendedor = {self.apellidos}")
         print(f"Edad del vendedor = {self.edad}")
 
     def verificar_edad(self, edad):
         if edad < 18:
-            # Se genera una excepción de argumento ilegal / valor inválido
+            # Se genera una excepción de argumento ilegal/valor inválido
             raise ValueError("El vendedor debe ser mayor de 18 años.")
         if 0 <= edad < 120:
             self.edad = edad

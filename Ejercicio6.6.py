@@ -2,7 +2,7 @@
 
 import math
 
-class CalculosNumericos:
+class CalculosNumericos:    
 
     @staticmethod
     def calcular_logaritmo_neperiano(valor):
